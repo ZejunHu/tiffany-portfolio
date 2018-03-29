@@ -1,21 +1,141 @@
-{{!< default}}
-<div class="container">
-	<div class="jumbotron"><img src="/images/logo.svg" width="160">
-		<h1>Welcome</h1>
-		<p>This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
-		<p>
-			It includes the latest versions of
-			<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		</p>
-		<p>Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
-		<hr>
-		<p>We have created a default Admin user for you with the email <strong>admin@admin.com</strong> and the password <strong>admin</strong>.</p>
-		<p><a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
-		<hr>
-		<p>
-			Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-		</p>
-	</div>
-</div>
+<!-- Header -->
+<header class="masthead" style="background-image: url('/images/background1.jpg');">
+  <div class="container">
+    <div class="intro-text mx-auto">
+      <div class="intro-lead-in">Hi, I'm <p class="text-primary heading-strong">Tiffany</p>,</div>
+      <div class="intro-lead-in">a User Experience Designer</div>
+      <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
+    </div>
+  </div>
+</header>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading mb-5">I specialize in</h2>
+        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <!-- <span class="fa-stack fa-4x">
+          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+        </span> -->
+				<img src="/images/Artboard 1.png" class="services-icon" alt="User Research">
+        <h4 class="service-heading">User Research</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+				<img src="/images/Artboard 2.png" class="services-icon" alt="Conceptualization">
+        <h4 class="service-heading">Conceptualization</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+				<img src="/images/Artboard 3.png" class="services-icon" alt="Visualizing Ideas">
+        <h4 class="service-heading">Visualizing Ideas</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Grid -->
+<section class="bg-light" id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">My Work</h2>
+        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Threads</h4>
+          <p class="text-muted">Illustration</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Explore</h4>
+          <p class="text-muted">Graphic Design</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Finish</h4>
+          <p class="text-muted">Identity</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Lines</h4>
+          <p class="text-muted">Branding</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Southwest</h4>
+          <p class="text-muted">Website Design</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Window</h4>
+          <p class="text-muted">Photography</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
