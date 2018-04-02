@@ -89,6 +89,9 @@ img::-moz-selection {
 .text-primary {
   color: #71e3e8; }
 
+.text-gray {
+  color: #adb5bd; }
+
 #mainNav {
   background-color: #212529; }
   #mainNav .navbar-toggler {
@@ -147,6 +150,7 @@ img::-moz-selection {
 
 header.masthead {
   color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/background.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -274,6 +278,8 @@ header.masthead {
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
       margin-bottom: 30px; }
+      .portfolio-modal .modal-content ul.list-inline li p {
+        display: inline-block; }
     .portfolio-modal .modal-content img {
       margin-bottom: 30px; }
     .portfolio-modal .modal-content button {
@@ -458,44 +464,6 @@ header.masthead {
   .team-member p {
     margin-top: 0; }
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center; }
-  section#contact .section-heading {
-    color: #fff; }
-  section#contact .form-group {
-    margin-bottom: 25px; }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
-      padding: 20px; }
-    section#contact .form-group input.form-control {
-      height: auto; }
-    section#contact .form-group textarea.form-control {
-      height: 248px; }
-  section#contact .form-control:focus {
-    border-color: #71e3e8;
-    box-shadow: none; }
-  section#contact ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact :-moz-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact ::-moz-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact :-ms-input-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
 #footer {
   position: relative;
   padding-top: 40px;
@@ -539,3 +507,86 @@ section#contact {
   font-size: 14px;
   text-transform: uppercase;
   margin: 0; }
+
+@media (min-width: 992px) {
+  .about-info {
+    padding-right: 2rem; } }
+
+.about-img {
+  margin-top: 1rem; }
+  @media (min-width: 992px) {
+    .about-img {
+      margin-top: 2rem; } }
+  @media (min-width: 1200px) {
+    .about-img {
+      margin-top: 0rem; } }
+
+/*------------------------------------*\
+	Owl theme
+\*------------------------------------*/
+/* -- dots -- */
+.owl-theme .owl-dots .owl-dot span {
+  border: none;
+  background: #EEE;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all; }
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #71e3e8; }
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #71e3e8;
+  width: 20px; }
+
+/* -- nav -- */
+.owl-theme .owl-nav {
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity; }
+
+.owl-theme:hover .owl-nav {
+  opacity: 1; }
+
+.owl-theme .owl-nav [class*='owl-'] {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #71e3e8;
+  color: #FFF;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  line-height: 50px;
+  margin: 0; }
+
+.owl-theme .owl-prev {
+  left: 0px; }
+
+.owl-theme .owl-next {
+  right: 0px; }
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  opacity: 0.8;
+  background: #71e3e8; }
+
+/* --  section header  -- */
+.section-header {
+  position: relative;
+  margin-bottom: 60px; }
+
+.section-header .title {
+  text-transform: capitalize; }
+
+.title:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40px;
+  background-color: #71e3e8;
+  margin-top: 20px; }
+
+.text-center .title:after {
+  margin: 20px auto 0px; }

@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="masthead" style="background-image: url('/images/background1.jpg');">
+<header class="masthead">
   <div class="container">
     <div class="intro-text mx-auto">
       <div class="intro-lead-in">Hi, I'm <p class="text-primary heading-strong">Tiffany</p>,</div>
@@ -14,8 +14,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading mb-5">I specialize in</h2>
-        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+        <h2 class="section-heading mb-5">I Specialize In</h2>
+        <!-- <h3 class="section-subheading text-gray">Lorem ipsum dolor sit amet consectetur.</h3> -->
       </div>
     </div>
     <div class="row text-center">
@@ -26,29 +26,30 @@
         </span> -->
 				<img src="/images/Artboard 1.png" class="services-icon" alt="User Research">
         <h4 class="service-heading">User Research</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <p class="text-gray">Competitive analysis, User stories, Surveys & Interviews, Affinity diagram, Mental models, User flows.</p>
       </div>
       <div class="col-md-4">
 				<img src="/images/Artboard 2.png" class="services-icon" alt="Conceptualization">
         <h4 class="service-heading">Conceptualization</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <p class="text-gray">User persona, Information architecture, Sketching, Wireframing, Mock-ups, Usability testing.</p>
       </div>
       <div class="col-md-4">
 				<img src="/images/Artboard 3.png" class="services-icon" alt="Visualizing Ideas">
         <h4 class="service-heading">Visualizing Ideas</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <p class="text-gray">Rapid prototyping, Visual design, Typography, Interaction design, HTML/CSS.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Portfolio Grid -->
-<section class="bg-light" id="work">
+ <!-- class="bg-light" -->
+<section id="work">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">My Work</h2>
-        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+        <h2 class="section-heading mb-5">My Work</h2>
+        <!-- <h3 class="section-subheading text-gray">Lorem ipsum dolor sit amet consectetur.</h3> -->
       </div>
     </div>
     <div class="row">
@@ -65,7 +66,7 @@
         </a>
         <div class="portfolio-caption">
           <h4>{{title}}</h4>
-          <p class="text-muted">{{{content.brief}}}</p>
+          <p class="text-gray">{{categories.0.name}}</p>
         </div>
       </div>
       {{/each}}
@@ -73,7 +74,104 @@
   </div>
 </section>
 
+<!-- Why Choose Us -->
+	<section id="about">
 
+		<!-- Container -->
+		<div class="container">
+      <div class="section-header text-center">
+        <h2>A Bite About Me</h2>
+      </div>
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-lg-6">
+          <div class="about-info">
+            <p>I’m Tiffany, a UX Designer. I’m also a recent graduate from the Cognitive science and Statistics programs at the University of Toronto. My multidisciplinary educational background has prepared me to be a both user-centered and data-driven designer. The Cognitive Science training has given me a comprehensive knowledge in human cognition and behaviour. And my learning in Statistics has armed me with strong expertise for conducting data-driven research. I’ve always believe that great experience comes from deep empathy toward users, and compelling design couldn’t be born without understanding how people perceive the world.</p>
+            <p>Outside of design, I’m a dog parent. I love to take my babies to different parks and trails in the weekend and just enjoy seeing them play.</p>
+          </div>
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-lg-6 about-img">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="/images/about1.png" alt="about1">
+						<img class="img-responsive" src="/images/about2.jpeg" alt="about2">
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</section>
+	<!-- /Why Choose Us -->
+
+  <!-- Contact -->
+	<section id="contact">
+
+		<!-- Container -->
+		<div class="container">
+
+      <!-- Section-header -->
+      <div class="section-header text-center">
+        <h2 class="title">Get in touch</h2>
+      </div>
+      <!-- /Section-header -->
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- contact -->
+				<div class="col-sm-12 mx-auto">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>info@tiffany.ca</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					{{#if enquirySubmitted}}
+					<h3 class="text-center">Thanks for getting in touch.</h3>
+					{{else}}
+					<form class="contact-form" method="post">
+						<input type="hidden" name="action" value="contact">
+						<div class="form-group first-line {{#if validationErrors.name}}has-error{{/if}}">
+							<input type="text" name="name.full"  class="input" placeholder="Name" value="{{formData.[name.full]}}">
+						</div>
+						<div class="form-group first-line first-line-right {{#if validationErrors.email}}has-error{{/if}}">
+							<input type="email" name="email" class="input" placeholder="Email" value="{{formData.email}}">
+						</div>
+						<div class="form-group">
+							<input type="text" name="subject" placeholder="Subject" class="input" value="{{formData.subject}}">
+						</div>
+						<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+							<textarea name="message" placeholder="Message" class="input">{{formData.message}}</textarea>
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary rounded">Send</button>
+						</div>
+					</form>
+					{{/if}}
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</section>
+	<!-- /Contact -->
 
 <!-- Portfolio Modals -->
     {{# each data.posts.results}}
@@ -91,12 +189,12 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">{{title}}</h2>
-                  <p class="item-intro text-muted">{{{content.brief}}}</p>
+                  <p class="item-intro text-gray">{{{content.brief}}}</p>
                   <img class="img-fluid d-block mx-auto" src="{{{ cloudinaryUrl image }}}" alt="">
                   <p>{{{content.extended}}}</p>
                   <ul class="list-inline">
                     <li>Date: {{formatDate publishedDate}}</li>
-                    <li>Category: {{{content.brief}}}</li>
+                    <li>Category: {{categories.0.name}}</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>

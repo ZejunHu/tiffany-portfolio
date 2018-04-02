@@ -39,6 +39,18 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Owl Carousel
+  $('#about-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 15,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left mt-3"></i>', '<i class="fa fa-angle-right mt-3"></i>'],
+    dots: true,
+    autoplay: true,
+    animateOut: 'fadeOut'
+  });
+
   // Hide navbar when modals trigger
   $('.portfolio-modal').on('show.bs.modal', function(e) {
     $(".navbar").addClass("d-none");

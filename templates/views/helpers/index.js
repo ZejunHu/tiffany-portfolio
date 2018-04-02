@@ -331,5 +331,11 @@ module.exports = function () {
 		return date.toDateString();
 	};
 
+	////////////////////////////////////////////////////////////////
+	_helpers.logsth = function(sth) {
+		console.log(sth);
+		return;
+	};
+
 	return _helpers;
 };
