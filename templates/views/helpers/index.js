@@ -326,5 +326,10 @@ module.exports = function () {
 		return obj._[underscoreMethod].format();
 	};
 
+	_helpers.formatDate = function(date) {
+		//console.log(date);
+		return date.toDateString();
+	};
+
 	return _helpers;
 };
