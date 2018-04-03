@@ -9,11 +9,11 @@
     color: white;
     border: 0;
     background-color: $primary;
-    @include heading-font;
+    @include primary-font;
   }
   .navbar-brand {
     color: $primary;
-    @include script-font;
+    @include primary-font;
     &.active,
     &:active,
     &:focus,
@@ -32,7 +32,7 @@
         padding: 0.75em 0;
         letter-spacing: 1px;
         color: white;
-        @include heading-font;
+        @include primary-font;
         &.active,
         &:hover {
           color: $primary;

@@ -1,7 +1,7 @@
 // Global styling for this template
 body {
   overflow-x: hidden;
-  @include body-font;
+  @include primary-font;
 }
 
 p {
@@ -26,11 +26,11 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  @include heading-font;
+  @include primary-font;
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -42,18 +42,18 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    @include serif-font;
+    @include primary-font;
   }
 }
 @media(min-width:768px) {
   section {
-    padding: 150px 0;
+    padding: 80px 0;
   }
 }
 
 // Button Styles
 .btn {
-  @include heading-font;
+  @include primary-font;
   font-weight: 700;
 }
 

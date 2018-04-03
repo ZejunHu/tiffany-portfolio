@@ -1,0 +1,52 @@
+.form-group {
+  margin: 0;
+}
+
+.contact {
+    margin: 15px 0px;
+    text-align: center;
+    i {
+        font-size: 36px;
+        color: $primary;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 40px;
+    .input {
+        height: 40px;
+        width: 100%;
+        border: none;
+        background: #F4F4F4;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #EEE;
+        padding: 0px 10px;
+        opacity: 0.5;
+        transition: 0.2s border-color, 0.2s opacity;
+    }
+}
+
+
+.first-line {
+    width: calc(50% - 10px);
+    display: inline-block;
+}
+
+.first-line-right {
+    margin-left: 15px;
+}
+
+.contact-form .input:nth-child(1), .contact-form .input:nth-child(2) {
+      width: 100%;
+  }
+.contact-form .input:nth-child(2) {
+      margin-left: 0px;
+  }
+
+textarea {
+  padding: 10px 10px;
+  min-height: 80px;
+  resize: vertical;
+}
