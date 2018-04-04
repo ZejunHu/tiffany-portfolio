@@ -20,7 +20,8 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #71e3e8; }
+  color: #71e3e8;
+  outline: 0; }
   a:hover {
     color: #45dae1; }
 
@@ -158,6 +159,12 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media (min-width: 1200px) {
+    header.masthead {
+      background-position: center 65%; } }
+  @media (min-width: 1600px) {
+    header.masthead {
+      background-position: center 70%; } }
   header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
@@ -217,6 +224,12 @@ header.masthead {
       line-height: 75px;
       margin-bottom: 50px;
       font-family: 'Roboto'; } }
+
+@media (min-width: 1600px) {
+  header.masthead {
+    height: 80vh; }
+    header.masthead .intro-text {
+      padding-top: 350px; } }
 
 .heading-strong {
   display: inline-block; }
@@ -579,9 +592,18 @@ textarea {
   text-transform: uppercase;
   margin: 0; }
 
-@media (min-width: 992px) {
-  .about-info {
-    padding-right: 2rem; } }
+.about-info {
+  letter-spacing: 1px;
+  word-spacing: 1.2px; }
+  @media (min-width: 992px) {
+    .about-info {
+      padding-right: 2rem;
+      letter-spacing: normal;
+      word-spacing: normal; } }
+  @media (min-width: 1200px) {
+    .about-info {
+      letter-spacing: 1.1px;
+      word-spacing: 1.5px; } }
 
 .about-img {
   margin-top: 1rem; }

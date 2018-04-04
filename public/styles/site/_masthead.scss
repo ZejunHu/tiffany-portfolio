@@ -7,6 +7,12 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   @include background-cover;
+  @media (min-width: 1200px) {
+    background-position: center 65%;
+  }
+  @media (min-width: 1600px) {
+    background-position: center 70%;
+  }
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
@@ -73,6 +79,14 @@ header.masthead {
         margin-bottom: 50px;
         @include primary-font;
       }
+    }
+  }
+}
+@media(min-width:1600px) {
+  header.masthead {
+    height: 80vh;
+    .intro-text {
+      padding-top: 350px;
     }
   }
 }

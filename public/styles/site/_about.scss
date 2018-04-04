@@ -1,6 +1,14 @@
 .about-info {
+    letter-spacing: 1px;
+    word-spacing: 1.2px;
     @media (min-width: 992px) {
       padding-right: 2rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    @media (min-width: 1200px) {
+      letter-spacing: 1.1px;
+      word-spacing: 1.5px;
     }
 }
 
