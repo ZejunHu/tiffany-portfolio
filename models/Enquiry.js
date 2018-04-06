@@ -59,10 +59,10 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 			templateName: 'enquiry-notification',
 			transport: 'mailgun',
 		}).send({
-			to: "wbsxbysharp@gmail.com",
+			to: "tiffany.huang2011@gmail.com",
 			from: {
 				name: 'Tiffany',
-				email: 'wbsxbysharp@gmail.com',
+				email: 'tiffany.huang2011@gmail.com',
 			},
 			subject: 'New Enquiry for Tiffany',
 			enquiry: enquiry,
