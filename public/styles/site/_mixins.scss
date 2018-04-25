@@ -10,4 +10,5 @@
 // Font Mixins
 @mixin primary-font {
   font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
 }
