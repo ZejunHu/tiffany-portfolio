@@ -1,6 +1,7 @@
 // Global styling for this template
 body {
   overflow-x: hidden;
+  font-weight: 200;
   @include primary-font;
 }
 
@@ -26,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
   @include primary-font;
 }
 
@@ -55,7 +56,7 @@ section {
 // Button Styles
 .btn {
   @include primary-font;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .btn-xl {
@@ -104,4 +105,8 @@ img::-moz-selection {
 
 .text-gray {
   color: $gray-500;
+}
+
+.text-light-weight {
+  font-weight: 100;
 }
